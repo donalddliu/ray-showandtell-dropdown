@@ -1,0 +1,37 @@
+.profile-tab-icon{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.round-metadata-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.round-number-container {
+    display: flex;
+    font-size: 2rem;
+}
+
+.round-number-text {
+    font-size: 2rem;
+}
+
+.profile-container {
+    display: flex;
+}
+
+.profile-role-text {
+    font-size: 2rem;
+}
+
+.earnings-container {
+    display: flex;
+}
+
+.earnings-text {
+    font-size: 2rem;
+}

@@ -1,0 +1,248 @@
+/* -----------------
+- Styling Results Tab -
+----------------- */
+
+.results-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.results-text {
+    display: flex;
+    margin: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.results-content {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: black;
+    /* padding: 25px 25px; */
+}
+
+.players-selected-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 1.4rem;
+}
+
+.listeners-selected {
+    display: flex;
+    flex-direction:row;
+}
+
+.advisors-selected {
+    display: flex;
+    flex-direction: row;
+}
+
+.results-symbol-set-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.results-symbol-set{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.results-symbol-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    width:100%;
+
+}
+
+.results-symbol-display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+.results-left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.results-left-symbols-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.results-middle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.results-right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.results-bar-separator {
+    margin: 2rem 0 1rem 0;
+}
+
+.profile-icon {
+    display: flex;
+}
+
+.profile-icon .black {
+    filter: invert(0%) sepia(0%) saturate(7488%) hue-rotate(301deg) brightness(95%) contrast(103%);
+}
+
+.profile-icon .blue {
+    filter: invert(73%) sepia(49%) saturate(342%) hue-rotate(162deg) brightness(100%) contrast(89%);
+}
+
+.profile-icon .green {
+    filter: invert(39%) sepia(91%) saturate(411%) hue-rotate(70deg) brightness(91%) contrast(98%);
+}
+
+.profile-icon .red {
+    filter: invert(12%) sepia(93%) saturate(4190%) hue-rotate(340deg) brightness(103%) contrast(95%);
+}
+
+.profile-icon .purple {
+    filter: invert(72%) sepia(82%) saturate(844%) hue-rotate(204deg) brightness(89%) contrast(100%);
+}
+
+.profile-icon .yellow {
+    filter: invert(75%) sepia(100%) saturate(2436%) hue-rotate(6deg) brightness(111%) contrast(107%);
+}
+
+.profile-icon .white {
+    filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(218deg) brightness(107%) contrast(101%);
+}
+
+.results-img {
+    display: flex;
+}
+
+
+
+/* .results-content {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 590px;
+    background-color: var(--mediumblue);
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 25px 25px;
+} */
+
+/* -----------------
+- Styling Survey Wait Tab -
+----------------- */
+
+.survey-wait-static-image {
+    display: flex;
+    padding: 30px 30px;
+}
+
+.survey-wait-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--darkblue);
+}
+
+.survey-wait-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px 25px;
+    background-color: var(--darkblue);
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+.survey-progress-bar-container {
+    display: flex;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+}
+
+.survey-progress-bar-filled {
+    background-color: var(--turquoise);
+    transition: 'width 1s ease-in-out',
+}
+
+/* -----------------
+- Failed Attention Check -
+----------------- */
+
+.failed-attention-container {
+    display: flex;
+    width: 590px;
+    padding: 100px;
+    margin-top: 20%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--darkblue);
+
+}
+
+.failed-attention-text {
+    color: var(--turquoise);
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+}

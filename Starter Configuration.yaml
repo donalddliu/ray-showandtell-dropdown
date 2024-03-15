@@ -1,0 +1,293 @@
+treatments:
+  - name: debugGame1
+    factorIds:
+      - YJf3w33stc6maF5L5
+      - QCBsQhfoia2qSktWq
+      - esHfQ4tdiYg4mf5TR
+      - y9Gosgtt6TjtRwDtu
+      - dymEsC3e744QWe4Bm
+      - aAJmSP59JoHtH7349
+      - mteWcmPNzGJ7PiNDg
+      - 6A72tXoQrx7nZcoyf
+  - name: debugGame
+    factorIds:
+      - YJf3w33stc6maF5L5
+      - QCBsQhfoia2qSktWq
+      - P5vCxewiYFW9Ni5kA
+      - dymEsC3e744QWe4Bm
+      - y9Gosgtt6TjtRwDtu
+      - aAJmSP59JoHtH7349
+      - mteWcmPNzGJ7PiNDg
+      - 6A72tXoQrx7nZcoyf
+      - RbSWb6bnsbe3z9w32
+      - oEr7fJ8qbFpx5gEYe
+  - name: debugGame2
+    factorIds:
+      - Ask9JBGYtc8fDAAb2
+      - koS7pBwmY8Y3dyQFt
+      - P5vCxewiYFW9Ni5kA
+      - y9Gosgtt6TjtRwDtu
+      - dymEsC3e744QWe4Bm
+      - 8ckNEwEvcv9TMoJ9Z
+      - mteWcmPNzGJ7PiNDg
+      - 6A72tXoQrx7nZcoyf
+      - RbSWb6bnsbe3z9w32
+      - L4sx4p3AigdqqBwiH
+  - name: debugGame3
+    factorIds:
+      - Ask9JBGYtc8fDAAb2
+      - koS7pBwmY8Y3dyQFt
+      - P5vCxewiYFW9Ni5kA
+      - y9Gosgtt6TjtRwDtu
+      - dymEsC3e744QWe4Bm
+      - 8ckNEwEvcv9TMoJ9Z
+      - mteWcmPNzGJ7PiNDg
+      - 6A72tXoQrx7nZcoyf
+      - RbSWb6bnsbe3z9w32
+      - L4sx4p3AigdqqBwiH
+      - eAGHCXzvP7TeSscpA
+      - XKPc3Fc2YtxPAfZFp
+  - name: debugGame4
+    factorIds:
+      - Ask9JBGYtc8fDAAb2
+      - koS7pBwmY8Y3dyQFt
+      - P5vCxewiYFW9Ni5kA
+      - y9Gosgtt6TjtRwDtu
+      - dymEsC3e744QWe4Bm
+      - 8ckNEwEvcv9TMoJ9Z
+      - mteWcmPNzGJ7PiNDg
+      - 6A72tXoQrx7nZcoyf
+      - RbSWb6bnsbe3z9w32
+      - L4sx4p3AigdqqBwiH
+      - eAGHCXzvP7TeSscpA
+      - XKPc3Fc2YtxPAfZFp
+      - rpn3r7v2LrvNbQiGP
+factorTypes:
+  - _id: 2Ryk9da7pnfZ9aCBv
+    name: playerCount
+    description: The Number of players participating in the given game.
+    required: true
+    type: Integer
+    min: 1
+  - _id: uj7xmZrn9suPsaYfn
+    name: networkStructure
+    description: >-
+      Determines which players are connected to which players. Connections
+      between two players correlate to potential speaker-listener or
+      listener-advisor pairs. The format of the structure is a string where
+      connections between two different player nodes are separated by a hyphen (
+      - ), and different connections are separated by a comma ( , ) . For
+      example, "1-2, 1-3" means that player 1 has connections to both player 2
+      and 3. Player roles are chosen randomly within the game.
+    required: true
+    type: String
+    min: 0
+    max: 99999
+  - _id: aJr3d7oPHGLYPbKsa
+    name: numTaskRounds
+    description: >-
+      Number of task rounds in a game. Task rounds are rounds where speaker
+      players describe a symbol to the listeners. Then, the listeners pick the
+      symbol that best corresponds to the given description. Listeners may
+      receive help from advisors they are paired with.
+    required: false
+    type: String
+    min: 0
+    max: 999
+  - _id: MztnxcttSG5mnTbj5
+    name: tellDuration
+    description: >-
+      Duration of time (in seconds) that speakers get to describe their
+      respective selected symbol. If this duration passes, the stage will end.
+    required: true
+    type: Integer
+    min: 0
+    max: 99999
+  - _id: yQ7BmiyhKNNseRyJs
+    name: listenDuration
+    description: >-
+      Duration of time (in seconds) that listeners and advisors get to choose
+      the symbol that best corresponds to the description the speaker gave. If
+      this duration passes, the stage will end.
+    required: true
+    type: Integer
+    min: 0
+    max: 99999
+  - _id: qAcKZLgvtcRiFpayW
+    name: numAdvisorsPerPair
+    description: The number of advisors that are paired with each listener.
+    required: true
+    type: Integer
+    min: 0
+    max: 999
+  - _id: spyhef2BPce8EhJjH
+    name: numSLPairs
+    description: Number of speaker-listener pairs that are chosen for a given round.
+    required: true
+    type: Integer
+    min: 0
+    max: 999
+  - _id: NNPK2pkJhA26rXJhL
+    name: reqMutual
+    description: >-
+      If true, advisors are required to be a mutual connection to both the
+      speaker and listener. Otherwise, advisors only need to be connected to the
+      listener.
+    required: true
+    type: Boolean
+  - _id: DtmwSjC5BTqxJN2p7
+    name: numSurveyRounds
+    description: >-
+      Number of survey rounds in a game. Survey rounds are rounds where all
+      players answer a brief survey about the game. These surveys will be evenly
+      placed throughout the entire game. Survey rounds are done asynchronously.
+    required: true
+    type: Number
+    min: 0
+    max: 999
+  - _id: ahdE3JQ8Hp3us8Tw2
+    name: surveyDuration
+    description: >-
+      Duration of time (in seconds) that players are allowed to complete the
+      mid-game surveys. If this duration passes, the stage will end.
+    required: true
+    type: Number
+    min: 0
+    max: 99999
+  - _id: vtHorBQgCMhaxhkgH
+    name: resultsDuration
+    description: >-
+      Duration of time (in seconds) that speakers and listeners get to view the
+      results of their current trial. If this duration passes, the stage will
+      end.
+    required: false
+    type: String
+    min: 0
+    max: 99999
+  - _id: zePbjJTGZWe9s9iuo
+    name: passiveResultsDuration
+    description: >-
+      Duration of time (in seconds) that speakers and listeners get to view the
+      passive results of their current trial. If this duration passes, the stage
+      will end.
+    required: false
+    type: String
+    min: 0
+    max: 99999
+  - _id: yjX8fhcjwKwiDcDiP
+    name: passiveMode
+    description: >-
+      If true, players will be able to see passive results from other pairs. If
+      false, players will be assigned advisors that can aid them during the
+      rounds.
+    required: false
+    type: Boolean
+factors:
+  - _id: scssrRZ3qCh2tNESc
+    name: 'true'
+    value: true
+    factorTypeId: NNPK2pkJhA26rXJhL
+  - _id: 6A72tXoQrx7nZcoyf
+    name: 'false'
+    value: false
+    factorTypeId: NNPK2pkJhA26rXJhL
+  - _id: mteWcmPNzGJ7PiNDg
+    name: two
+    value: 2
+    factorTypeId: spyhef2BPce8EhJjH
+  - _id: YJf3w33stc6maF5L5
+    name: six
+    value: 6
+    factorTypeId: 2Ryk9da7pnfZ9aCBv
+  - _id: esHfQ4tdiYg4mf5TR
+    name: five
+    value: '5'
+    factorTypeId: aJr3d7oPHGLYPbKsa
+  - _id: DoBp7Jp7mY2yvQoDj
+    name: one
+    value: '1'
+    factorTypeId: aJr3d7oPHGLYPbKsa
+  - _id: seEj7L8875x6vLcSF
+    name: oneMinute
+    value: 60
+    factorTypeId: MztnxcttSG5mnTbj5
+  - _id: AGQAiSopmaWgozWqm
+    name: oneMinute
+    value: 60
+    factorTypeId: yQ7BmiyhKNNseRyJs
+  - _id: dymEsC3e744QWe4Bm
+    name: veryLong
+    value: 99999
+    factorTypeId: yQ7BmiyhKNNseRyJs
+  - _id: y9Gosgtt6TjtRwDtu
+    name: veryLong
+    value: 99999
+    factorTypeId: MztnxcttSG5mnTbj5
+  - _id: aAJmSP59JoHtH7349
+    name: two
+    value: 2
+    factorTypeId: qAcKZLgvtcRiFpayW
+  - _id: 8ckNEwEvcv9TMoJ9Z
+    name: one
+    value: 1
+    factorTypeId: qAcKZLgvtcRiFpayW
+  - _id: zuREEcisTBXWs9qKa
+    name: one
+    value: 1
+    factorTypeId: spyhef2BPce8EhJjH
+  - _id: QCBsQhfoia2qSktWq
+    name: sixPlayerFC
+    value: >-
+      1-2, 1-3, 1-4, 1-5, 1-6, 2-1, 2-3, 2-4, 2-5, 2-6, 3-1, 3-2, 3-4, 3-5, 3-6,
+      4-1, 4-2, 4-3, 4-5, 4-6, 5-1, 5-2, 5-3, 5-4, 5-6, 6-1, 6-2, 6-3, 6-4, 6-5
+    factorTypeId: uj7xmZrn9suPsaYfn
+  - _id: RbSWb6bnsbe3z9w32
+    name: two
+    value: 2
+    factorTypeId: DtmwSjC5BTqxJN2p7
+  - _id: XSkxthG9wfrD49Ja5
+    name: three
+    value: 3
+    factorTypeId: DtmwSjC5BTqxJN2p7
+  - _id: P5vCxewiYFW9Ni5kA
+    name: six
+    value: '6'
+    factorTypeId: aJr3d7oPHGLYPbKsa
+  - _id: oEr7fJ8qbFpx5gEYe
+    name: veryLong
+    value: 99999
+    factorTypeId: ahdE3JQ8Hp3us8Tw2
+  - _id: L4sx4p3AigdqqBwiH
+    name: tenMinutes
+    value: 600
+    factorTypeId: ahdE3JQ8Hp3us8Tw2
+  - _id: Ask9JBGYtc8fDAAb2
+    name: four
+    value: 4
+    factorTypeId: 2Ryk9da7pnfZ9aCBv
+  - _id: koS7pBwmY8Y3dyQFt
+    name: fourPlayerFC
+    value: '1-2, 1-3, 1-4, 2-1, 2-3, 2-4, 3-1, 3-2, 3-4, 4-1, 4-2, 4-3'
+    factorTypeId: uj7xmZrn9suPsaYfn
+  - _id: eAGHCXzvP7TeSscpA
+    name: fiveSeconds
+    value: '5'
+    factorTypeId: vtHorBQgCMhaxhkgH
+  - _id: XKPc3Fc2YtxPAfZFp
+    name: tenSeconds
+    value: '10'
+    factorTypeId: zePbjJTGZWe9s9iuo
+  - _id: rpn3r7v2LrvNbQiGP
+    name: 'true'
+    value: true
+    factorTypeId: yjX8fhcjwKwiDcDiP
+  - _id: orRBmGYhFq3u2TXSa
+    name: 'false'
+    value: false
+    factorTypeId: yjX8fhcjwKwiDcDiP
+lobbyConfigs:
+  - name: Default
+    timeoutType: lobby
+    timeoutInSeconds: 600
+    timeoutStrategy: fail
+    gameLobbyIds: []

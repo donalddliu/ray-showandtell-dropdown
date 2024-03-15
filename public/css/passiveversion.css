@@ -1,0 +1,12 @@
+.passive-round {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+  
+.passive-content {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}

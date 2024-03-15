@@ -1,0 +1,224 @@
+.task-container {
+    display: flex;
+    flex-direction: row;;
+    width: 100%;
+    height: 100%;
+}
+
+.task-response-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+/* Task Text */
+.task-response-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    height: 10%;
+}
+
+.task-response-header .header {
+    margin-bottom: 0px;
+    margin-right: 10px;
+}
+
+.task-instruction-text {
+    font-size: 2rem;
+}
+
+.task-description-missing-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* SYMBOLS */
+.task-response-body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+    padding: 10px 10px;
+}
+
+.submission-message-container {
+    color: white;
+    display: flex;
+    padding: 25px 25px 0px 25px;
+
+}
+
+.task-response {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px 25px;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+/* Type Message Box */
+
+.task-response-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+.task-response-footer-timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 10px;
+    margin: 10px 0px;
+}
+
+.task-response-footer-timer .timer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.task-response-footer-timer .timer .seconds {
+    font-size: 1.5rem;
+    font-family: Helvetica, Arial, sans-serif;
+    color: green;
+}
+
+
+.task-response-footer-timer .timer.lessThan10 .seconds {
+    color: orange;
+}
+
+.task-response-footer-timer .timer.lessThan5 .seconds {
+    color: red;
+}
+
+.task-description-symbol-container {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin: 0px 25px;
+}
+
+.task-description-form-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    margin: 10px 0px;
+}
+
+.task-description-form {
+    display: flex;
+    width: 60%;
+    resize: vertical;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.task-description-submit {
+    display: flex;
+    background-color: rgb(93 184 91);
+    padding: 0.5rem 0.5rem;
+    line-height: 1.00;
+    width: fit-content;
+}
+
+/* -----------------
+- Styling the symbol buttons -
+----------------- */
+
+.symbol-container {
+    /* background-color: var(--blue); */
+    /* border: 5px solid transparent; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: transparent;
+    margin: 0px 25px;
+}
+
+.symbol-display-container {
+    /* background-color: var(--blue); */
+    border: 10px solid lightgrey;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.symbol-display-container.selected{
+    border: 10px solid black;
+    background-color: var(--white);
+}
+
+.symbol-display-container.correct{
+    border: 10px solid green;
+}
+
+.symbol-display-container.wrong{
+    border: 10px solid red;
+}
+
+.symbolButtonUnselected{
+    display: flex;
+    /* border: 0px solid rgb(53, 70, 124); */
+    border: 10px solid lightgrey;
+    background-color: transparent;
+
+    width: 100%;
+    padding: 0;
+}
+
+.symbolButtonUnselected:hover {
+    background-color: lightgrey;
+    border: 10px solid black;
+}
+  
+.symbolButtonSelected {
+    display: flex;
+    border: 10px solid black;
+    background-color: lightgrey;
+    /* background-color: #061a429c; */
+    width: 100%;
+    padding: 0;
+}
+
+.noHover {
+    pointer-events: none;
+}
+
+.symbolButtonSelected:hover {
+    /* background-color: #061a429c; */
+    background-color: lightgrey;
+    border: 10px solid black;
+}
+
+.symbol-img {
+    background-color: var(--white);
+    transition: .35s ease-in-out;
+
+}
+
+.symbol-img.selected {
+    background-color: var(--white);
+    transition: .35s ease-in-out;
+
+}

@@ -1,0 +1,9 @@
+name = "ray-showandtell-dropdown"
+
+[tajriba.auth]
+srtoken = "ueZbpbgprCwugdnW"
+
+[[tajriba.auth.users]]
+name = "Admin"
+username = "admin"
+password = "WGVKwXjP"

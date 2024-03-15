@@ -1,0 +1,12 @@
+node_modules/
+packages/
+settings.json
+production.json
+prod.json
+staging.json
+development.json
+dev.json
+local.json
+deployment.json
+.DS_Store
+
